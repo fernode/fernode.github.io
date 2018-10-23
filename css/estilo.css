@@ -15,9 +15,11 @@ body {
 /*linear-gradient(302deg, rgba(185, 43, 39, 1) 0%, rgba(51, 51, 153, 0.9248074229691877) 37%)*/
 
 .header {
-	background-image: linear-gradient(148deg, rgba(0, 92, 151, 1) 0%, rgba(54, 55, 149, 0.9362710674157303) 25%),
+	background-image: linear-gradient(148deg, rgba(39, 108, 152, 0.83) 0%, rgba(54, 55, 149, 0.9362710674157303) 25%),
 		url(../img/capa.jpg);
 	background-size: cover;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -29,6 +31,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	text-align: center;
 }
 
 .heading__primary--main {
@@ -37,7 +40,7 @@ body {
 }
 
 .heading__primary--sub {
-	padding-left: 3rem;
+
 	font-size: 1.3rem;
 	letter-spacing: .1rem;
 }
