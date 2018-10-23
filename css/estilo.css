@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+}
+
+/*linear-gradient(302deg, rgba(185, 43, 39, 1) 0%, rgba(51, 51, 153, 0.9248074229691877) 37%)*/
+
+.header {
+	background-image: linear-gradient(148deg, rgba(0, 92, 151, 1) 0%, rgba(54, 55, 149, 0.9362710674157303) 25%),
+		url(../img/capa.jpg);
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.heading__primary {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.heading__primary--main {
+	font-size: 5rem;
+	letter-spacing: .3rem;
+}
+
+.heading__primary--sub {
+	padding-left: 3rem;
+	font-size: 1.3rem;
+	letter-spacing: .1rem;
+}
+
+.icons__primary {
+	margin-top: 1.3rem;
+}
+
+.icons__primary--link {
+	text-decoration: none;
+	color: #fff;
+	font-size: 3rem;
+	transition: all .2s ease-in-out;
+	margin-right: 1rem;
+}
+
+.icons__primary--link:hover {
+	font-size: 3.3rem;
+}
