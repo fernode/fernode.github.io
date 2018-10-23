@@ -61,7 +61,7 @@ body {
 }
 
 
-@media(max-width:500px) {
+@media(max-width:650px) {
 	.heading__primary--main {
 		font-size: 4rem;
 	}
