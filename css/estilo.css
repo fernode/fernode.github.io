@@ -7,7 +7,7 @@
 }
 
 body {
-	font-size: 10px;
+	font-size: 62.5%;
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
 }
@@ -40,7 +40,6 @@ body {
 }
 
 .heading__primary--sub {
-
 	font-size: 1.3rem;
 	letter-spacing: .1rem;
 }
@@ -59,4 +58,20 @@ body {
 
 .icons__primary--link:hover {
 	font-size: 3.3rem;
+}
+
+
+@media(max-width:500px) {
+	.heading__primary--main {
+		font-size: 4rem;
+	}
+
+	.heading__primary--sub {
+		font-size: 1.2rem;
+	}
+
+	.icons__primary {
+		display: flex;
+		justify-content: center;
+	}
 }
