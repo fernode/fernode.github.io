@@ -1,0 +1,45 @@
+@import 'config';
+@import 'global';
+@import 'header';
+@import 'menu';
+
+/*linear-gradient(302deg, rgba(185, 43, 39, 1) 0%, rgba(51, 51, 153, 0.9248074229691877) 37%)*/
+
+@media(max-width:650px) {
+	.menu-branding .portrait {
+		width: 13rem;
+		height: 13rem;
+	}
+
+	.menu .nav-link {
+		font-size: 1.5rem;
+	}
+
+	.header {
+		background-position-x: 1rem;
+	}
+
+	.heading__primary--main {
+		font-size: 4rem;
+	}
+
+	.heading__primary--sub {
+		font-size: 1.2rem;
+	}
+
+	.icons__primary {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media(max-width:421px) {
+	.menu-branding .portrait {
+		width: 12rem;
+		height: 12rem;
+	}
+
+	.menu .nav-link {
+		font-size: 1.3rem;
+	}
+}

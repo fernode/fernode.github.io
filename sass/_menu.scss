@@ -1,0 +1,131 @@
+.menu-btn {
+	position: absolute;
+	z-index: 3;
+	top: 35px;
+	right: 35px;
+	cursor: pointer;
+
+	@include easeOut;
+
+	.btn-line {
+		width: 28px;
+		height: 3px;
+		margin: 0 0 3px 0;
+		background: #fff;
+
+		@include easeOut;
+	}
+
+	&.close {
+		transform: rotate(180deg);
+
+		.btn-line {
+			&:nth-child(1) {
+				transform: rotate(45deg) translate(5px, 5px);
+			}
+
+			&:nth-child(2) {
+				visibility: hidden;
+			}
+
+			&:nth-child(3) {
+				transform: rotate(-45deg) translate(5px, -2px);
+			}
+		}
+	}
+}
+
+//MENU OVERLAY
+.menu {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	opacity: $background-opacity;
+	visibility: hidden;
+	overflow: hidden;
+
+	&.show {
+		visibility: visible;
+	}
+
+	&-branding,
+	&-nav {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		float: left;
+		width: 50%;
+		height: 100vh;
+		overflow: hidden;
+	}
+
+	&-nav {
+		margin: 0;
+		background: darken($primary-color, 10);
+		padding: 0;
+		list-style: none;
+		transform: translate3d(0, -100%, 0);
+		@include easeOut;
+
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
+	}
+
+	&-branding {
+		background: $primary-color;
+		transform: translate3d(0, 100%, 0);
+		@include easeOut;
+
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
+
+		.portrait {
+			width: 16rem;
+			height: 16rem;
+			background-image: url(../img/perfil2.jpg);
+			background-size: cover;
+			border: solid $secondary-color;
+			border-radius: 50%;
+		}
+	}
+
+	.nav-item {
+		transform: translate3d(600px, 0, 0);
+		@include easeOut;
+
+		&.show {
+			transform: translate3d(0, 0, 0);
+		}
+
+		&.current>a {
+			color: $secondary-color;
+		}
+	}
+
+	.nav-link {
+		display: inline-block;
+		position: relative;
+		font-size: 30px;
+		text-transform: uppercase;
+		padding: 1rem 0;
+		font-weight: 300;
+		text-decoration: none;
+		color: #fff;
+		@include easeOut;
+
+		&:hover {
+			color: $secondary-color;
+		}
+	}
+}
+
+//Delay para cada nav
+@for $x from 1 through 4 {
+	.nav-item:nth-child(#{$x}) {
+		transition-delay: $x * 0.1s;
+	}
+}
