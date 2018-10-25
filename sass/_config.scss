@@ -4,6 +4,7 @@ $blue-dark: rgb(39, 108, 152);
 $blue-dark2: rgb(54, 55, 149);
 $secondary-color: #eece1a;
 $show-home-image: true;
+$perfil-image: url(../img/perfil.jpg);
 
 @mixin easeOut {
 	transition: all 0.5s ease-out;

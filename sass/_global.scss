@@ -9,5 +9,11 @@
 body {
 	font-size: 62.5%;
 	font-family: 'Roboto', sans-serif;
-	color: #fff;
+	overflow-x: hidden;
+	//color: #fff;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
 }

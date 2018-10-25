@@ -8,41 +8,11 @@
 body {
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
-  color: #fff; }
+  overflow-x: hidden; }
 
-.header {
-  background-image: linear-gradient(148deg, rgba(39, 108, 152, 0.83) 0%, rgba(54, 55, 149, 0.936271) 25%), url(../img/capa.jpg);
-  background-size: cover;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.heading__primary {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center; }
-  .heading__primary--main {
-    font-size: 6rem;
-    letter-spacing: .3rem; }
-  .heading__primary--sub {
-    font-size: 1.1rem;
-    letter-spacing: .1rem; }
-
-.icons__primary {
-  margin-top: 1.3rem; }
-  .icons__primary--link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 3rem;
-    transition: all .2s ease-in-out;
-    margin-right: 1rem; }
-  .icons__primary--link:hover {
-    font-size: 3.3rem; }
+.container {
+  width: 80%;
+  margin: 0 auto; }
 
 .menu-btn {
   position: absolute;
@@ -139,6 +109,68 @@ body {
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
+
+.header {
+  background-image: linear-gradient(148deg, rgba(39, 108, 152, 0.83) 0%, rgba(54, 55, 149, 0.936271) 25%), url(../img/capa.jpg);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; }
+
+.heading__primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  .heading__primary--main {
+    font-size: 6rem;
+    letter-spacing: .3rem; }
+  .heading__primary--sub {
+    font-size: 1.1rem;
+    letter-spacing: .1rem; }
+
+.icons__primary {
+  margin-top: 1.3rem; }
+  .icons__primary--link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    transition: all .2s ease-in-out;
+    margin-right: 1rem; }
+  .icons__primary--link:hover {
+    font-size: 3.3rem; }
+
+.principal {
+  margin-top: 2rem; }
+  .principal .quem-sou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000; }
+    .principal .quem-sou--titulo {
+      font-size: 4rem;
+      margin: 1rem 0; }
+    .principal .quem-sou__perfil {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .principal .quem-sou__perfil--foto {
+        width: 16rem;
+        height: 16rem;
+        margin-bottom: 2rem;
+        background: url(../img/perfil.jpg) no-repeat;
+        background-size: cover;
+        border-radius: 50%; }
+      .principal .quem-sou__perfil--apresentacao {
+        font-size: 1.2rem;
+        text-indent: 3rem;
+        word-spacing: 1px;
+        text-align: justify; }
 
 /*linear-gradient(302deg, rgba(185, 43, 39, 1) 0%, rgba(51, 51, 153, 0.9248074229691877) 37%)*/
 @media (max-width: 650px) {
