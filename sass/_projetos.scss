@@ -34,15 +34,22 @@
 		display: flex;
 		flex-wrap: wrap;
 		list-style: none;
+		margin: 0 auto;
 
 		.item {
-			width: 30.33%;
+			width: 29.33%;
 			margin: 1rem 1rem;
 
 			figure {
 				text-align: center;
 				display: flex;
 				flex-direction: column;
+				transition: all .4s;
+
+				&:hover {
+					transform: scale(1.2);
+					z-index: 2;
+				}
 			}
 
 			a {
@@ -54,9 +61,10 @@
 		}
 	}
 
-	@media(max-width:930px) {
+	@media (max-width: 930px) {
 		& {
-			height: 208vh;
+			//height: 261vh;
+			height: 211vh;
 		}
 
 		&--titulo {
@@ -71,17 +79,11 @@
 		}
 	}
 
-	@media(max-width:635px) {
-		& {
-			//height: 261vh;
-			height: 208;
-		}
-
+	@media (max-width: 635px) {
 		&--lista {
 			.item {
 				width: 58%;
 			}
 		}
 	}
-
 }

@@ -194,14 +194,19 @@ body {
   .principal__projetos--lista {
     display: flex;
     flex-wrap: wrap;
-    list-style: none; }
+    list-style: none;
+    margin: 0 auto; }
     .principal__projetos--lista .item {
-      width: 30.33%;
+      width: 29.33%;
       margin: 1rem 1rem; }
       .principal__projetos--lista .item figure {
         text-align: center;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        transition: all .4s; }
+        .principal__projetos--lista .item figure:hover {
+          transform: scale(1.2);
+          z-index: 2; }
       .principal__projetos--lista .item a {
         text-decoration: none;
         color: #fff;
@@ -209,7 +214,7 @@ body {
         text-align: center; }
   @media (max-width: 930px) {
     .principal__projetos {
-      height: 208vh; }
+      height: 211vh; }
     .principal__projetos--titulo {
       padding-top: 12rem; }
     .principal__projetos--lista {
@@ -218,8 +223,6 @@ body {
       align-items: center;
       justify-content: center; } }
   @media (max-width: 635px) {
-    .principal__projetos {
-      height: 208; }
     .principal__projetos--lista .item {
       width: 58%; } }
 
@@ -233,5 +236,32 @@ body {
 @media (max-width: 372px) {
   .principal__projetos {
     height: 271vh; } }
+
+.contato {
+  color: #fff;
+  background-color: black;
+  height: 100vh;
+  clip-path: polygon(0 15%, 104% 0, 106% 106%, 0 106%);
+  margin-top: -10rem; }
+  @media (min-width: 1000px) {
+    .contato-margin-desk {
+      margin: -6rem; } }
+  .contato--titulo {
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 15rem; }
+  .contato__icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; }
+    .contato__icons .icons__primary--link {
+      padding: 3rem; }
+    @media (max-width: 600px) {
+      .contato__icons .contato-margin-mob {
+        margin-top: -16.4rem; }
+      .contato__icons .icons__primary--link {
+        font-size: 1.4rem;
+        padding: 2rem; } }
 
 /*linear-gradient(302deg, rgba(185, 43, 39, 1) 0%, rgba(51, 51, 153, 0.9248074229691877) 37%)*/

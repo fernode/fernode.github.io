@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="home">
 		<div class="menu-btn">
 			<div class="btn-line"></div>
 			<div class="btn-line"></div>
@@ -25,22 +25,22 @@
 			</div>
 			<ul class="menu-nav">
 				<li class="nav-item current">
-					<a href="/" class="nav-link ">
+					<a href="#home" class="nav-link ">
 						Home
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#about" class="nav-link">
+					<a href="#sobre" class="nav-link">
 						Sobre
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#work" class="nav-link">
+					<a href="#projetos" class="nav-link">
 						Projetos
 					</a>
 				</li>
 				<li class="nav-item">
-					<a href="#contact" class="nav-link">
+					<a href="#contato" class="nav-link">
 						Contato
 					</a>
 				</li>
@@ -61,21 +61,22 @@
 		</div>
 	</header>
 	<main class="principal">
-		<section class="quem-sou container">
+		<section class="quem-sou container" id="sobre">
 			<h1 class="quem-sou--titulo">Quem sou</h1>
 			<div class="quem-sou__perfil">
 				<div class="quem-sou__perfil--foto"></div>
 				<p class="quem-sou__perfil--apresentacao">
 					Possuo formação em redes de computadores, mas me apaixonei mesmo pelas aulas de lógica de programação e
 					desenvolvimento web.
-					</br> Desde então venho estudando mais sobre o assunto, fazendo vários cursos e buscando aprender mais a cada dia.
+					</br> Desde então venho estudando mais sobre o assunto, fiz vários cursos no Alura e estou sempre buscando
+					aprender mais a cada dia.
 				</p>
 			</div>
 		</section>
 
-		<section class="principal__projetos">
+		<section class="principal__projetos" id="projetos">
 			<h1 class="principal__projetos--titulo">Projetos</h1>
-			<div>
+			<div class="container">
 				<ul class="principal__projetos--lista">
 					<li class="item">
 						<a href="https://codepen.io/fernandocss/full/mzaLQw/" target="_blank" rel="noopener noreferrer">
@@ -118,6 +119,17 @@
 						</a>
 					</li>
 				</ul>
+			</div>
+		</section>
+
+		<section class="contato contato-margin-desk contato-margin-mob" id="contato">
+			<h1 class="contato--titulo">Contato</h1>
+			<div class="contato__icons icons__primary container">
+				<a class="icons__primary--link" href="https://github.com/fernode" target="_blank"><i class="fab fa-github"></i></a>
+				<a class="icons__primary--link" href="https://www.linkedin.com/in/fernando-silva-878355ba/" target="_blank"><i
+					 class="fab fa-linkedin-in"></i></a>
+				<a class="icons__primary--link" href="https://www.instagram.com/fernandosilva9556/" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a class="icons__primary--link" href="https://www.facebook.com/fernandosilvadj" target="_blank"><i class="fab fa-facebook-f"></i></a>
 			</div>
 		</section>
 	</main>

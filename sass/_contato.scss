@@ -1,0 +1,44 @@
+.contato {
+	color: #fff;
+	background-color: black;
+	height: 100vh;
+	//-webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
+	//clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
+	clip-path: polygon(0 15%, 104% 0, 106% 106%, 0 106%);
+	margin-top: -10rem;
+
+	@media(min-width: 1000px) {
+		&-margin-desk {
+			//margin: -7.1rem;
+			margin: -6rem
+		}
+	}
+
+	&--titulo {
+		color: #fff;
+		font-size: 4rem;
+		text-align: center;
+		padding-top: 15rem;
+	}
+
+	&__icons {
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
+
+		.icons__primary--link {
+			padding: 3rem;
+		}
+
+		@media(max-width: 600px) {
+			.contato-margin-mob {
+				margin-top: -16.4rem;
+			}
+
+			.icons__primary--link {
+				font-size: 1.4rem;
+				padding: 2rem;
+			}
+		}
+	}
+}
