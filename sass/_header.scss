@@ -22,6 +22,12 @@
 	&--main {
 		font-size: 6rem;
 		letter-spacing: .3rem;
+
+		@media(max-width: 630px) {
+			& {
+				font-size: 4rem;
+			}
+		}
 	}
 
 	&--sub {

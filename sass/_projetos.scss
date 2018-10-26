@@ -27,7 +27,7 @@
 		color: #fff;
 		font-size: 4rem;
 		text-align: center;
-		padding: 2rem;
+		padding-top: 2rem;
 	}
 
 	&--lista {
@@ -53,4 +53,35 @@
 			}
 		}
 	}
+
+	@media(max-width:930px) {
+		& {
+			height: 208vh;
+		}
+
+		&--titulo {
+			padding-top: 12rem;
+		}
+
+		&--lista {
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	@media(max-width:635px) {
+		& {
+			//height: 261vh;
+			height: 208;
+		}
+
+		&--lista {
+			.item {
+				width: 58%;
+			}
+		}
+	}
+
 }

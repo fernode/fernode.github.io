@@ -130,6 +130,9 @@ body {
   .heading__primary--main {
     font-size: 6rem;
     letter-spacing: .3rem; }
+    @media (max-width: 630px) {
+      .heading__primary--main {
+        font-size: 4rem; } }
   .heading__primary--sub {
     font-size: 1.1rem;
     letter-spacing: .1rem; }
@@ -172,6 +175,9 @@ body {
         word-spacing: 1px;
         text-align: justify;
         margin-bottom: 2rem; }
+    @media (max-width: 635px) {
+      .principal .quem-sou--titulo {
+        font-size: 3rem; } }
 
 .principal__projetos {
   width: 100vw;
@@ -184,7 +190,7 @@ body {
     color: #fff;
     font-size: 4rem;
     text-align: center;
-    padding: 2rem; }
+    padding-top: 2rem; }
   .principal__projetos--lista {
     display: flex;
     flex-wrap: wrap;
@@ -201,6 +207,21 @@ body {
         color: #fff;
         font-size: 1.2rem;
         text-align: center; }
+  @media (max-width: 930px) {
+    .principal__projetos {
+      height: 208vh; }
+    .principal__projetos--titulo {
+      padding-top: 12rem; }
+    .principal__projetos--lista {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center; } }
+  @media (max-width: 635px) {
+    .principal__projetos {
+      height: 208; }
+    .principal__projetos--lista .item {
+      width: 58%; } }
 
 @media (max-width: 421px) {
   .menu-branding .portrait {
@@ -209,27 +230,8 @@ body {
   .menu .nav-link {
     font-size: 1.3rem; } }
 
-@media (max-width: 930px) {
-  .principal__projetos {
-    height: 261vh; }
-    .principal__projetos--titulo {
-      padding-top: 7rem; }
-    .principal__projetos--lista {
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center; } }
-
-@media (max-width: 635px) {
-  .quem-sou--titulo {
-    font-size: 3rem; }
-  .principal__projetos {
-    height: 261vh; }
-    .principal__projetos--lista .item {
-      width: 58%; } }
-
 @media (max-width: 372px) {
   .principal__projetos {
-    width: 271vh; } }
+    height: 271vh; } }
 
 /*linear-gradient(302deg, rgba(185, 43, 39, 1) 0%, rgba(51, 51, 153, 0.9248074229691877) 37%)*/

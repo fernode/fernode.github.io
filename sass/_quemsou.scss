@@ -35,5 +35,11 @@
 			}
 		}
 
+		@media(max-width:635px) {
+			&--titulo {
+				font-size: 3rem;
+			}
+
+		}
 	}
 }
