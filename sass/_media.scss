@@ -1,0 +1,53 @@
+@media(max-width:421px) {
+	.menu-branding .portrait {
+		width: 9.7rem;
+		height: 9.7rem;
+	}
+
+	.menu .nav-link {
+		font-size: 1.3rem;
+	}
+}
+
+@media(max-width:930px) {
+	.principal__projetos {
+		height: 261vh;
+
+		&--titulo {
+			padding-top: 7rem;
+		}
+
+		&--lista {
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+
+@media(max-width:635px) {
+	.quem-sou {
+		&--titulo {
+			font-size: 3rem;
+		}
+	}
+
+	.principal__projetos {
+		height: 261vh;
+
+		&--lista {
+			.item {
+				width: 58%;
+			}
+		}
+	}
+}
+
+
+@media(max-width:372px) {
+	.principal__projetos {
+		width: 271vh;
+	}
+}

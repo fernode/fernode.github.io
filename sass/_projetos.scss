@@ -1,0 +1,56 @@
+.principal__projetos {
+	width: 100vw;
+	height: 100vh;
+	margin-top: 2rem;
+	-webkit-clip-path: polygon(0 0, 100% 11%, 100% 85%, 0 100%);
+	clip-path: polygon(0 0, 100% 11%, 100% 85%, 0 100%);
+
+	background-image: linear-gradient(112deg,
+		hsl(330.3, 50.75%, 39.02%) 0%,
+		hsl(328.77, 49.47%, 39.1%) 8.1%,
+		hsl(324.23, 46.01%, 39.3%) 15.8%,
+		hsl(316.32, 41.02%, 39.48%) 23.1%,
+		hsl(303.78, 35.01%, 39.57%) 30%,
+		hsl(287.01, 33.49%, 42.55%) 36.6%,
+		hsl(271.76, 33.45%, 46.44%) 43%,
+		hsl(258.19, 33.72%, 50.23%) 49.2%,
+		hsl(246.05, 38.9%, 53.81%) 55.3%,
+		hsl(235.42, 46.41%, 55.54%) 61.3%,
+		hsl(227.94, 55.76%, 55.03%) 67.4%,
+		hsl(222.57, 64.08%, 54.07%) 73.5%,
+		hsl(218.46, 71.06%, 52.63%) 79.8%,
+		hsl(215.16, 76.47%, 50.68%) 86.3%,
+		hsl(212.4, 86.22%, 48.18%) 93%,
+		hsl(210, 100%, 45.1%) 100%);
+
+	&--titulo {
+		color: #fff;
+		font-size: 4rem;
+		text-align: center;
+		padding: 2rem;
+	}
+
+	&--lista {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+
+		.item {
+			width: 30.33%;
+			margin: 1rem 1rem;
+
+			figure {
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+			}
+
+			a {
+				text-decoration: none;
+				color: #fff;
+				font-size: 1.2rem;
+				text-align: center;
+			}
+		}
+	}
+}
