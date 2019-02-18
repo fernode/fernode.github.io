@@ -73,11 +73,11 @@ body {
     .menu-branding .portrait {
       width: 16rem;
       height: 16rem;
-      background-image: url(../img/perfil2.jpg);
+      background-image: url(../img/perfil.jpg);
       background-size: cover;
       border: solid #eece1a;
       border-radius: 50%;
-      z-index: 2; }
+      z-index: 5; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -148,6 +148,13 @@ body {
   .icons__primary--link:hover {
     font-size: 3.3rem; }
 
+.txt-type > .txt {
+  border-right: 0.2rem solid #fff; }
+
+@media (max-width: 486px) {
+  .icons__primary {
+    padding-left: 1rem; } }
+
 .principal {
   margin-top: 0rem; }
   .principal .quem-sou {
@@ -181,10 +188,7 @@ body {
 
 .principal__projetos {
   width: 100vw;
-  height: 100vh;
   margin-top: 2rem;
-  -webkit-clip-path: polygon(0 0, 100% 11%, 100% 85%, 0 100%);
-  clip-path: polygon(0 0, 100% 11%, 100% 85%, 0 100%);
   background-image: linear-gradient(112deg, #963163 0%, #953266 8.1%, #92366d 15.8%, #8e3b78 23.1%, #884284 30%, #814891 36.6%, #794f9e 43%, #6f55ab 49.2%, #655bb7 55.3%, #5961c2 61.3%, #4c66cc 67.4%, #3f6ad5 73.5%, #306edc 79.8%, #2171e1 86.3%, #1172e5 93%, #0073e6 100%); }
   .principal__projetos--titulo {
     color: #fff;
@@ -198,12 +202,17 @@ body {
     margin: 0 auto; }
     .principal__projetos--lista .item {
       width: 29.33%;
+      height: 29.33%;
       margin: 1rem 1rem; }
       .principal__projetos--lista .item figure {
         text-align: center;
         display: flex;
         flex-direction: column;
         transition: all .4s; }
+        .principal__projetos--lista .item figure img {
+          max-width: 100%;
+          height: 170px;
+          border-radius: 10px; }
         .principal__projetos--lista .item figure:hover {
           transform: scale(1.2);
           z-index: 2; }
@@ -213,10 +222,6 @@ body {
         font-size: 1.2rem;
         text-align: center; }
   @media (max-width: 930px) {
-    .principal__projetos {
-      height: 211vh; }
-    .principal__projetos--titulo {
-      padding-top: 12rem; }
     .principal__projetos--lista {
       flex-direction: column;
       flex-wrap: wrap;
@@ -233,19 +238,10 @@ body {
   .menu .nav-link {
     font-size: 1.3rem; } }
 
-@media (max-width: 372px) {
-  .principal__projetos {
-    height: 271vh; } }
-
 .contato {
   color: #fff;
   background-color: black;
-  height: 100vh;
-  clip-path: polygon(0 15%, 104% 0, 106% 106%, 0 106%);
-  margin-top: -10rem; }
-  @media (min-width: 1000px) {
-    .contato-margin-desk {
-      margin: -6rem; } }
+  height: 100vh; }
   .contato--titulo {
     color: #fff;
     font-size: 4rem;

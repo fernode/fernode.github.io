@@ -51,3 +51,13 @@
 		font-size: 3.3rem;
 	}
 }
+
+.txt-type>.txt {
+	border-right: 0.2rem solid #fff;
+}
+
+@media(max-width: 486px) {
+	.icons__primary {
+		padding-left: 1rem;
+	}
+}

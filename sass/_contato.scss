@@ -4,13 +4,13 @@
 	height: 100vh;
 	//-webkit-clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
 	//clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
-	clip-path: polygon(0 15%, 104% 0, 106% 106%, 0 106%);
-	margin-top: -10rem;
+	//clip-path: polygon(0 15%, 104% 0, 106% 106%, 0 106%);
+	//margin-top: -10rem;
 
 	@media(min-width: 1000px) {
 		&-margin-desk {
 			//margin: -7.1rem;
-			margin: -6rem
+			//margin: -6rem
 		}
 	}
 

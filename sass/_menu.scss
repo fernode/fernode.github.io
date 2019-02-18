@@ -86,11 +86,11 @@
 		.portrait {
 			width: 16rem;
 			height: 16rem;
-			background-image: url(../img/perfil2.jpg);
+			background-image: url(../img/perfil.jpg);
 			background-size: cover;
 			border: solid $secondary-color;
 			border-radius: 50%;
-			z-index: 2;
+			z-index: 5;
 		}
 	}
 
