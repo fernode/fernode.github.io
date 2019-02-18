@@ -227,7 +227,7 @@ body {
       justify-content: center; } }
   @media (max-width: 635px) {
     .principal__projetos--lista .item {
-      width: 58%; } }
+      width: 85%; } }
 
 @media (max-width: 421px) {
   .menu-branding .portrait {
