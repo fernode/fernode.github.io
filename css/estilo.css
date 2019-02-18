@@ -177,10 +177,8 @@ body {
         background-size: cover;
         border-radius: 50%; }
       .principal .quem-sou__perfil--apresentacao {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         text-indent: 3rem;
-        word-spacing: 1px;
-        text-align: justify;
         margin-bottom: 2rem; }
     @media (max-width: 635px) {
       .principal .quem-sou--titulo {
