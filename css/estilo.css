@@ -130,12 +130,15 @@ body {
   .heading__primary--main {
     font-size: 6rem;
     letter-spacing: .3rem; }
-    @media (max-width: 630px) {
+    @media (max-width: 790px) {
       .heading__primary--main {
         font-size: 4rem; } }
   .heading__primary--sub {
     font-size: 1.1rem;
     letter-spacing: .1rem; }
+    @media (max-width: 790px) {
+      .heading__primary--sub {
+        font-size: 1rem; } }
 
 .icons__primary {
   margin-top: 1.3rem; }
@@ -145,6 +148,9 @@ body {
     font-size: 3rem;
     transition: all .2s ease-in-out;
     margin-right: 1rem; }
+    @media (max-width: 790px) {
+      .icons__primary--link {
+        font-size: 2rem; } }
   .icons__primary--link:hover {
     font-size: 3.3rem; }
 
@@ -219,12 +225,14 @@ body {
         color: #fff;
         font-size: 1.2rem;
         text-align: center; }
-  @media (max-width: 930px) {
+  @media (max-width: 995px) {
     .principal__projetos--lista {
       flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: center; } }
+      justify-content: center; }
+      .principal__projetos--lista .item {
+        width: 50%; } }
   @media (max-width: 635px) {
     .principal__projetos--lista .item {
       width: 85%; } }
