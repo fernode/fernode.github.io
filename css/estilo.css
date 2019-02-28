@@ -220,6 +220,8 @@ body {
         .principal__projetos--lista .item figure:hover {
           transform: scale(1.2);
           z-index: 2; }
+        .principal__projetos--lista .item figure figcaption {
+          margin-top: .6rem; }
       .principal__projetos--lista .item a {
         text-decoration: none;
         color: #fff;
@@ -232,7 +234,9 @@ body {
       align-items: center;
       justify-content: center; }
       .principal__projetos--lista .item {
-        width: 50%; } }
+        width: 50%; }
+      .principal__projetos--lista:hover {
+        transform: scale(0); } }
   @media (max-width: 635px) {
     .principal__projetos--lista .item {
       width: 85%; } }
