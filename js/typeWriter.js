@@ -1,5 +1,5 @@
 class TypeWriter {
-	constructor(txtElement, words, wait = 3000) {
+	constructor(txtElement, words, wait = 2000) {
 		this.txtElement = txtElement;
 		this.words = words;
 		this.txt = '';
@@ -21,7 +21,7 @@ class TypeWriter {
 
 		this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
-		let typeSpeed = 300;
+		let typeSpeed = 250;
 
 		if (this.isDeleting) {
 			typeSpeed /= 2;
