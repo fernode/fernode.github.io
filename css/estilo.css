@@ -236,7 +236,7 @@ body {
       .principal__projetos--lista .item {
         width: 50%; }
       .principal__projetos--lista:hover {
-        transform: scale(0); } }
+        transform: scale(); } }
   @media (max-width: 635px) {
     .principal__projetos--lista .item {
       width: 85%; } }
