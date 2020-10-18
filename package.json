@@ -19,6 +19,6 @@
 	"homepage": "https://github.com/fernode/fernode.github.io#readme",
 	"dependencies": {},
 	"devDependencies": {
-		"node-sass": "^4.9.4"
+		"node-sass": "^4.13.1"
 	}
 }
