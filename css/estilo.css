@@ -129,13 +129,13 @@ body {
   text-align: center; }
   .heading__primary--main {
     font-size: 6rem;
-    letter-spacing: .3rem; }
+    letter-spacing: 0.3rem; }
     @media (max-width: 790px) {
       .heading__primary--main {
         font-size: 4rem; } }
   .heading__primary--sub {
     font-size: 1.1rem;
-    letter-spacing: .1rem; }
+    letter-spacing: 0.1rem; }
     @media (max-width: 790px) {
       .heading__primary--sub {
         font-size: 1rem; } }
@@ -146,13 +146,13 @@ body {
     text-decoration: none;
     color: #fff;
     font-size: 3rem;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     margin-right: 1rem; }
     @media (max-width: 790px) {
       .icons__primary--link {
         font-size: 2rem; } }
   .icons__primary--link:hover {
-    font-size: 3.3rem; }
+    font-size: 3.1rem; }
 
 .txt-type > .txt {
   border-right: 0.2rem solid #fff; }

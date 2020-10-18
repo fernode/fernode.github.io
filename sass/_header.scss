@@ -1,75 +1,78 @@
 .header {
-	background-image: linear-gradient(148deg, rgba(39, 108, 152, 0.83) 0%, rgba(54, 55, 149, 0.9362710674157303) 25%),
-		url(../img/capa.jpg);
-	background-size: cover;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #fff;
+  background-image: linear-gradient(
+      148deg,
+      rgba(39, 108, 152, 0.83) 0%,
+      rgba(54, 55, 149, 0.9362710674157303) 25%
+    ),
+    url(../img/capa.jpg);
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 .heading__primary {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
+  &--main {
+    font-size: 6rem;
+    letter-spacing: 0.3rem;
 
-	&--main {
-		font-size: 6rem;
-		letter-spacing: .3rem;
+    @media (max-width: 790px) {
+      & {
+        font-size: 4rem;
+      }
+    }
+  }
 
-		@media(max-width: 790px) {
-			& {
-				font-size: 4rem;
-			}
-		}
-	}
+  &--sub {
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
 
-	&--sub {
-		font-size: 1.1rem;
-		letter-spacing: .1rem;
-
-		@media(max-width: 790px) {
-			& {
-				font-size: 1rem;
-			}
-		}
-	}
+    @media (max-width: 790px) {
+      & {
+        font-size: 1rem;
+      }
+    }
+  }
 }
 
 .icons__primary {
-	margin-top: 1.3rem;
+  margin-top: 1.3rem;
 
-	&--link {
-		text-decoration: none;
-		color: #fff;
-		font-size: 3rem;
-		transition: all .2s ease-in-out;
-		margin-right: 1rem;
+  &--link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    transition: all 0.2s ease-in-out;
+    margin-right: 1rem;
 
-		@media(max-width: 790px) {
-			& {
-				font-size: 2rem;
-			}
-		}
-	}
+    @media (max-width: 790px) {
+      & {
+        font-size: 2rem;
+      }
+    }
+  }
 
-	&--link:hover {
-		font-size: 3.3rem;
-	}
+  &--link:hover {
+    font-size: 3.1rem;
+  }
 }
 
-.txt-type>.txt {
-	border-right: 0.2rem solid #fff;
+.txt-type > .txt {
+  border-right: 0.2rem solid #fff;
 }
 
-@media(max-width: 486px) {
-	.icons__primary {
-		padding-left: 1rem;
-	}
+@media (max-width: 486px) {
+  .icons__primary {
+    padding-left: 1rem;
+  }
 }
